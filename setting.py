@@ -9,8 +9,8 @@ URL = 'http://keiba.radionikkei.jp/keiba/rss2/news/'
 BUCKET = 'keibanews.aoshiman.org'
 
 try:
-    #  with open(lamvery.secret.file('config.yml')) as f:
-    with open('config.yml') as f:
+    with open(lamvery.secret.file('config.yml')) as f:
+    #  with open('config.yml') as f:
         _oauth_conf = yaml.load(f)
 
 except Exception as e:
