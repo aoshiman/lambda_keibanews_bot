@@ -1,0 +1,6 @@
+rules:
+- name: twitter_bot_keiba_rate_15min
+  description: CloudWatchEvent for keibanews
+  schedule: rate(15 minutes)
+  targets:
+  - id: twitter_bot_keiba_news

@@ -1,0 +1,13 @@
+profile: default
+region: ap-northeast-1
+versioning: false
+default_alias: null
+clean_build: false
+configuration:
+  name: lambda_keibanews_bot
+  runtime: python2.7
+  role: {{ env['AWS_LAMBDA_ROLE'] }}
+  handler: keibanews_bot.lambda_handler
+  description: lambda function for keibanews twitter bot
+  timeout: 300
+  memory_size: 128
